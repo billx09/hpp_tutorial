@@ -46,6 +46,20 @@
 /// This object takes as input the \c ProblemSolver instance that enables the
 /// viewer client to also control \c hppcorbaserver executable
 ///
+/// \note If you do not wish do use a viewer, you only need to use class
+///       gepetto.viewer_factory.ViewerFactory instead of gepetto.viewer.Viewer.
+///       For instance:
+///       \code
+///             from hpp.gepetto import ViewerFactory
+///             vf = ViewerFactory (ps)
+///             # Use ViewerFactory as you use Viewer class
+///       \endcode
+///       The ViewerFactory can be used to generate an instance of Viewer, at
+///       any time, any number of times:
+///       \code
+///             r = vf.createViewer ()
+///       \endcode
+///
 /// \code
 /// q_init = robot.getCurrentConfig ()
 /// q_goal = q_init [::]
@@ -113,4 +127,3 @@
 /// pp (1)
 /// \endcode
 /// Display second path after optimization.
-
