@@ -39,7 +39,7 @@ print ps.solve ()
 # 
 # r = vf.createViewer()
 # from hpp.gepetto import PathPlayer
-# pp = PathPlayer (robot.client, vf)
+# pp = PathPlayer (robot.client, r)
 
 # pp (0)
 # pp (1)
